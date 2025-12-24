@@ -1,14 +1,49 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
-  overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header,
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 24px;
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color: #eeeeee;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
 }
 
 img {
   width: 600px;
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  width: 480px;
+  max-width: 90%;
+  padding: 10px 24px;
+  font-size: 16px;
 }
 
 button {
@@ -16,11 +51,30 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0;
 }
 
-input {
-  border: 1px solid #ddd;
-  border-radius: 16px;
-  padding: 8px 24px;
-  width: 400px;
+.buttons {
+  display: flex;
+  gap: 12px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 16px;
+}
+
+a {
+  color: #555a60;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
